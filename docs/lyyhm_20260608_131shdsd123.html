@@ -183,11 +183,7 @@
     }
 
     function getApiBase() {
-      var fromParam = getParam('api_base');
-      if (fromParam) return fromParam.replace(/\/$/, '');
-      if (location.protocol.indexOf('http') === 0 && location.host) {
-        return location.protocol + '//' + location.host;
-      }
+      
       return 'https://lyyhm.com';
     }
 
